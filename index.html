@@ -252,68 +252,14 @@
   <!-- 지원하기 -->
   <section id="apply" class="apply-section">
     <div class="container">
-      <div class="apply-wrapper">
-        <div class="apply-info">
-          <h2>지원하기</h2>
-          <p>자유 양식의 상세 경력기반 국문 또는 영문이력서(PDF)를 올려주세요.</p>
-          <div class="apply-contact">
-            <span>채용 관련 문의</span>
-            <a href="mailto:career@bvrly.ai">career@bvrly.ai</a>
-          </div>
-        </div>
-
-        <form
-          class="apply-form"
-          action="https://formsubmit.co/career@bvrly.ai"
-          method="POST"
-          enctype="multipart/form-data"
-        >
-          <input type="hidden" name="_subject" value="[Mel Careers] 새로운 지원서가 도착했습니다">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="">
-          <input type="text" name="_honey" style="display:none">
-
-          <div class="form-group">
-            <label for="name">이름 <span class="req">*</span></label>
-            <input type="text" id="name" name="name" required placeholder="홍길동">
-          </div>
-
-          <div class="form-group">
-            <label for="email">이메일 <span class="req">*</span></label>
-            <input type="email" id="email" name="email" required placeholder="hello@example.com">
-          </div>
-
-          <div class="form-group">
-            <label for="phone">연락처</label>
-            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
-          </div>
-
-          <div class="form-group">
-            <label for="position">지원 포지션 <span class="req">*</span></label>
-            <select id="position" name="position" required>
-              <option value="" disabled selected>선택해주세요</option>
-              <option value="ML Engineer">ML Engineer</option>
-              <option value="Marketing Manager">Marketing Manager</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="resume">이력서 (PDF) <span class="req">*</span></label>
-            <div class="file-upload" id="fileUpload">
-              <input type="file" id="resume" name="attachment" required accept=".pdf">
-              <div class="file-upload-inner">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                <span>파일 선택 또는 드래그</span>
-                <span class="file-hint">PDF 파일만 가능</span>
-              </div>
-              <span class="file-name" id="fileName"></span>
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">지원서 제출</button>
-          <p class="form-note">제출하신 정보는 채용 목적으로만 사용됩니다.</p>
-        </form>
+      <div class="apply-box">
+        <h2>지원하기</h2>
+        <p>이름과 지원 포지션을 명기하여 자유 양식의 경력기반 이력서(PDF)를 보내주세요.</p>
+        <a href="mailto:career@bvrly.ai?subject=[Mel Careers] 지원합니다" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          career@bvrly.ai
+        </a>
+        <p class="apply-note">메일에 이력서 파일을 첨부해주세요</p>
       </div>
     </div>
   </section>
@@ -328,7 +274,7 @@
         </a>
         <div class="footer-links">
           <a href="https://apps.apple.com/kr/app/mel-real-time-video-ai-chat/id6754445045" target="_blank" rel="noopener">App Store</a>
-          <a href="https://swipechat.ai/static/privacy" target="_blank" rel="noopener">개인정보처리방침</a>
+          <a href="https://career.bvrly.ai" target="_blank" rel="noopener">개인정보처리방침</a>
           <a href="mailto:career@bvrly.ai">career@bvrly.ai</a>
         </div>
       </div>
