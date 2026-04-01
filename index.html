@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mel Careers</title>
+  <meta name="description" content="Mel 팀 채용 - AI 기술을 바탕으로 새로운 형태의 소통 경험을 만듭니다.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/bf/ad/1ebfad5e-6f6b-c876-bfb7-066d19fb910c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg">
+</head>
+<body>
+
+  <!-- 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/bf/ad/1ebfad5e-6f6b-c876-bfb7-066d19fb910c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="Mel" class="nav-icon">
+        <span class="logo-text">mel</span>
+        <span class="nav-divider"></span>
+        <span class="nav-sub">careers</span>
+      </a>
+      <div class="nav-links">
+        <a href="#positions">채용 공고</a>
+        <a href="#apply">지원하기</a>
+        <a href="mailto:career@bvrly.ai" class="nav-contact">career@bvrly.ai</a>
+      </div>
+      <button class="nav-toggle" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="#positions">채용 공고</a>
+    <a href="#apply">지원하기</a>
+    <a href="mailto:career@bvrly.ai">career@bvrly.ai</a>
+  </div>
+
+  <!-- 히어로 -->
+  <section class="hero">
+    <div class="container">
+      <h1>Mel에서 AI 기술을 통해 새로운 소통 경험과 즐거움을<br>만들어갈 동료를 찾아요</h1>
+      <a href="#positions" class="btn btn-primary">공고 보기</a>
+    </div>
+  </section>
+
+  <!-- 채용 공고 목록 -->
+  <section id="positions" class="positions-section">
+    <div class="container">
+      <div class="positions-top">
+        <h2>채용 공고</h2>
+        <span class="positions-count"><span id="visibleCount">2</span>개의 포지션</span>
+      </div>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">전체</button>
+        <button class="chip" data-filter="tech">Tech</button>
+        <button class="chip" data-filter="business">Business</button>
+      </div>
+
+      <!-- 테이블 헤더 -->
+      <div class="pos-header">
+        <span>직군</span>
+        <span>포지션</span>
+        <span>경력</span>
+        <span>고용형태</span>
+        <span></span>
+      </div>
+
+      <!-- 포지션 목록 -->
+      <div class="positions-list">
+        <div class="pos-row" data-team="tech" data-position="ML Engineer">
+          <span class="pos-tag tech">Tech</span>
+          <span class="pos-name">ML Engineer</span>
+          <span class="pos-meta">3년 이상</span>
+          <span class="pos-meta">정규직</span>
+          <a href="#apply" class="pos-link" data-target="ML Engineer">지원하기 →</a>
+        </div>
+
+        <div class="pos-row" data-team="business" data-position="Marketing Manager">
+          <span class="pos-tag business">Business</span>
+          <span class="pos-name">Marketing Manager</span>
+          <span class="pos-meta">2년 이상</span>
+          <span class="pos-meta">정규직</span>
+          <a href="#apply" class="pos-link" data-target="Marketing Manager">지원하기 →</a>
+        </div>
+      </div>
+
+      <div class="empty-state" id="emptyState" style="display:none;">
+        해당 직군의 채용 공고가 없습니다.
+      </div>
+    </div>
+  </section>
+
+  <!-- 포지션 상세 - ML Engineer -->
+  <section class="detail-section" id="detail-ml">
+    <div class="container">
+      <div class="detail-header">
+        <span class="pos-tag tech">Tech</span>
+        <h2>ML Engineer</h2>
+        <div class="detail-meta">
+          <span>정규직 (수습 3개월)</span>
+          <span>3년 이상</span>
+        </div>
+      </div>
+
+      <div class="detail-body">
+        <div class="detail-block">
+          <h3>팀 소개</h3>
+          <p>빠르게 성장하는 AI 컴패니언 시장에서, 영상 기반의 실시간 커뮤니케이션 경험으로 새로운 기준을 만들고자 하는 팀입니다. 텍스트 중심이 아닌 보고, 듣고, 반응하는 AI 캐릭터와의 실시간 소통을 구현합니다.</p>
+        </div>
+
+        <div class="detail-block">
+          <h3>직무 설명</h3>
+          <p>AI 컴패니언과 유저가 실시간 음성·영상 환경에서 자연스럽게 소통할 수 있도록 하는 핵심 ML 기술을 개발합니다. 단순 모델 연구가 아닌 실시간 인터랙션 환경에서의 대화·영상·음성 파이프라인을 제품 수준으로 구현하는 역할입니다.</p>
+
+          <h4>Focus Area 1: Real-time Video Interaction</h4>
+          <p>AI 컴패니언이 말하고 반응하는 모습을 실시간으로 자연스럽게 보고 느낄 수 있는 영상 기술을 개발합니다.</p>
+          <ul>
+            <li>유저 발화 및 대화 맥락에 맞춰 자연스러운 립싱크와 모션을 갖는 영상을 실시간으로 생성·재생 (Interactive Avatar / Talking Head / Lip-sync)</li>
+            <li>영상·음성·대화 모델을 연결하는 end-to-end 실시간 파이프라인 개발</li>
+            <li>실제 유저 사용 환경에서의 지연(latency), 영상 품질, 비용 최적화</li>
+          </ul>
+
+          <h4>Focus Area 2: Conversation</h4>
+          <p>영상 통화 환경에 최적화된 대화를 설계하여, 유저가 계속 대화하고 싶어지는 관계 중심의 대화 경험을 만듭니다.</p>
+          <ul>
+            <li>유저가 AI Companion과 계속 대화하고 싶어지는 대화 구조 및 패턴 설계·고도화</li>
+            <li>실시간 음성·영상 기반 대화 환경에 최적화된 대화 로직 설계</li>
+            <li>장기 기억 및 관계 변화에 따라 달라지는 대화 경험 구현</li>
+            <li>실 서비스 환경에서의 대화 품질을 모니터링하고, 사용자 반응을 기반으로 지속적인 개선</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>이런 분과 잘 맞아요</h3>
+          <ul>
+            <li>모델 성능만큼이나, 사용자가 실제로 어떻게 느끼는지를 중요하게 생각하는 분</li>
+            <li>기술뿐 아니라 기획적 시각을 함께 활용해, 정답이 없는 문제를 스스로 정의하고 풀어가는 것을 즐기는 분</li>
+            <li>AI와 사람 사이에 유의미한 관계가 만들어질 수 있다고 믿는 분</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>필수 역량</h3>
+          <ul>
+            <li>석·박사 과정을 포함해 AI/ML 관련 경력 3년 이상, 그중 현업 경력 2년 이상</li>
+            <li>AI/ML 전반에 대한 탄탄한 기본기를 바탕으로, 최소 한가지 이상의 특정 도메인에 대해 깊이 있게 파고든 경험</li>
+            <li>모델 연구에 그치지 않고, 이를 실제 제품에 적용하고 서비스화하는 과정에 관심과 경험</li>
+            <li>ML 모델을 실제 서비스 환경에 서빙해 본 경험</li>
+            <li>한국어로 원활한 의사소통이 가능한 분</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>우대사항</h3>
+          <h4>Video Interaction 관련</h4>
+          <ul>
+            <li>Talking Head, Lip-sync 등 Virtual Human / Avatar 관련 연구 또는 개발 경험</li>
+            <li>Flow-based / Diffusion 기반 영상·이미지 생성 모델에 대한 이해 및 활용 경험</li>
+          </ul>
+          <h4>Conversation 관련</h4>
+          <ul>
+            <li>음성 기반 대화 시스템(STT / LLM / TTS 혹은 End-to-end 모델) 연구 또는 개발 경험</li>
+            <li>페르소나 기반, 엔터테인먼트, 장기 기억 챗봇 등 대화 중심 서비스 설계 경험</li>
+          </ul>
+          <h4>공통</h4>
+          <ul>
+            <li>생성형 AI를 활용한 B2B/B2C 서비스 또는 피쳐 개발·운영 경험</li>
+            <li>ML 모델을 마이크로서비스 형태로 구현·배포·운영해 본 경험 (Cloud 환경, 컨테이너, Kubernetes 등)</li>
+            <li>실제 서비스에서 ML을 활용해 유저 리텐션, 체류 시간 등 비즈니스 지표 개선에 기여한 경험</li>
+            <li>제품에 대한 열정을 가지고 사용자 경험을 지속적으로 개선해 나가고자 하는 분</li>
+            <li>AI/ML 관련 주요 학회 및 저널 게재 실적</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>채용 절차</h3>
+          <p>서류 전형 → 1차 면접 → 2차 면접 → 처우 협의 → 최종 합격</p>
+          <ul class="note-list">
+            <li>정규직은 수습기간 3개월이 포함됩니다. 수습기간 중 급여 등 처우에 차등이 없으며, 평가 결과에 따라 수습기간이 연장 또는 종료될 수 있습니다.</li>
+            <li>지원서류 및 채용절차 전반에서 허위 사실이 있을 경우 채용이 취소될 수 있습니다.</li>
+            <li>필요 시, 추가 인터뷰, 직무 테스트, 그리고 지원자의 동의 하에 레퍼런스 체크가 진행될 수 있습니다. 또한 레퍼런스 체크 결과에 따라 채용이 취소될 수 있습니다.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 포지션 상세 - Marketing Manager -->
+  <section class="detail-section" id="detail-marketing">
+    <div class="container">
+      <div class="detail-header">
+        <span class="pos-tag business">Business</span>
+        <h2>Marketing Manager</h2>
+        <div class="detail-meta">
+          <span>정규직 (수습 3개월)</span>
+          <span>2년 이상</span>
+        </div>
+      </div>
+
+      <div class="detail-body">
+        <div class="detail-block">
+          <h3>담당업무</h3>
+          <p>빠르게 변화하는 AI 업계에서 북미 시장을 대상으로 디지털 마케팅을 기획 및 실행하고, 데이터 기반의 성장을 이끌어갑니다.</p>
+          <ul>
+            <li>퍼포먼스 마케팅: Meta Ads, Google Ads 등 유료 광고 캠페인 기획 및 운영, ROAS 최적화</li>
+            <li>SNS 마케팅: TikTok, Instagram, Reddit 등 플랫폼별 콘텐츠 전략 수립 및 커뮤니티 관리</li>
+            <li>콘텐츠 마케팅: 숏폼 비디오, UGC 스타일 크리에이티브 기획 및 제작, 바이럴 콘텐츠 개발</li>
+            <li>유입/전환/고객 행동 데이터 기반 유저 획득 및 사용자 경험 개선</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>자격요건</h3>
+          <ul>
+            <li>디지털 마케팅 실무 경력 2년 이상이신 분</li>
+            <li>주요 광고 매체(Meta, TikTok 등)를 직접 세팅하고 운영해 본 경험이 있으신 분</li>
+            <li>SNS 플랫폼 특성에 대한 이해 및 콘텐츠 제작 경험</li>
+            <li>도전정신과 실행력이 뛰어나고, 0에서 1을 만드는 과정을 즐기는 분</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>우대사항</h3>
+          <ul>
+            <li>초기/성장기 스타트업에서 마케팅 전 과정을 주도적으로 리딩해 본 경험</li>
+            <li>창의적인 방법으로 성과(Growth)를 만들어 본 경험</li>
+            <li>AI, 엔터테인먼트, 콘텐츠 플랫폼에 대한 관심이 많으신 분</li>
+            <li>북미 문화 및 트렌드에 대한 높은 이해도와 영어 능통자</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>채용 절차</h3>
+          <p>서류 전형 → 1차 면접 → 2차 면접 → 처우 협의 → 최종 합격</p>
+          <ul class="note-list">
+            <li>정규직은 수습기간 3개월이 포함됩니다. 수습기간 중 급여 등 처우에 차등이 없으며, 평가 결과에 따라 수습기간이 연장 또는 종료될 수 있습니다.</li>
+            <li>지원서류 및 채용절차 전반에서 허위 사실이 있을 경우 채용이 취소될 수 있습니다.</li>
+            <li>필요 시, 추가 인터뷰, 직무 테스트, 그리고 지원자의 동의 하에 레퍼런스 체크가 진행될 수 있습니다. 또한 레퍼런스 체크 결과에 따라 채용이 취소될 수 있습니다.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 지원하기 -->
+  <section id="apply" class="apply-section">
+    <div class="container">
+      <div class="apply-wrapper">
+        <div class="apply-info">
+          <h2>지원하기</h2>
+          <p>자유 양식의 상세 경력기반 국문 또는 영문이력서(PDF)를 올려주세요.</p>
+          <div class="apply-contact">
+            <span>채용 관련 문의</span>
+            <a href="mailto:career@bvrly.ai">career@bvrly.ai</a>
+          </div>
+        </div>
+
+        <form
+          class="apply-form"
+          action="https://formsubmit.co/career@bvrly.ai"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="_subject" value="[Mel Careers] 새로운 지원서가 도착했습니다">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-group">
+            <label for="name">이름 <span class="req">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="홍길동">
+          </div>
+
+          <div class="form-group">
+            <label for="email">이메일 <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="hello@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
+          </div>
+
+          <div class="form-group">
+            <label for="position">지원 포지션 <span class="req">*</span></label>
+            <select id="position" name="position" required>
+              <option value="" disabled selected>선택해주세요</option>
+              <option value="ML Engineer">ML Engineer</option>
+              <option value="Marketing Manager">Marketing Manager</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resume">이력서 (PDF) <span class="req">*</span></label>
+            <div class="file-upload" id="fileUpload">
+              <input type="file" id="resume" name="attachment" required accept=".pdf">
+              <div class="file-upload-inner">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <span>파일 선택 또는 드래그</span>
+                <span class="file-hint">PDF 파일만 가능</span>
+              </div>
+              <span class="file-name" id="fileName"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">지원서 제출</button>
+          <p class="form-note">제출하신 정보는 채용 목적으로만 사용됩니다.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#" class="nav-logo">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/bf/ad/1ebfad5e-6f6b-c876-bfb7-066d19fb910c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="Mel" class="footer-icon">
+          <span class="logo-text">mel</span>
+        </a>
+        <div class="footer-links">
+          <a href="https://apps.apple.com/kr/app/mel-real-time-video-ai-chat/id6754445045" target="_blank" rel="noopener">App Store</a>
+          <a href="https://swipechat.ai/static/privacy" target="_blank" rel="noopener">개인정보처리방침</a>
+          <a href="mailto:career@bvrly.ai">career@bvrly.ai</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mel Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
